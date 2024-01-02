@@ -14,3 +14,6 @@ def tit_for_tat(my_choice_history, their_choice_history, current_round_number):
     """
     cooperate = their_choice_history[current_round_number - 1] if current_round_number >= 1 else True
     return cooperate
+
+def lucky_seven(my_choices, their_choices, round_no): 
+    return False if round_no % 7 == 0 and round_no != 0 else True
